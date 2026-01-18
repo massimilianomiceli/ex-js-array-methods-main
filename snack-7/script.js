@@ -19,5 +19,13 @@ const students = [
   },
 ];
 
+const studentId2 = students.find((studente) => studente.id === 2);
+
+if (!studentId2) {
+  console.log("Non ho trovato nulla");// non trovato
+} else {
+  console.log(studentId2);// trovato
+}
+
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
